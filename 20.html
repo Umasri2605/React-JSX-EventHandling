@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.26.5/babel.min.js"></script>
+</head>
+<body>
+    <id id="d1"></id>
+   <script type="text/babel">
+    var jsxh1=<div>
+         <input  type="radio" name="country" value="India" onChange={()=>{abc(event)}}/>India
+         <input  type="radio" name="country" value="United States Of America" onChange={()=>{abc(event)}}/>USA
+         <h1 id="d4"></h1>
+    </div>
+     function abc(ev){
+        d4.innerHTML=ev.target.value;
+     }
+     
+     
+    ReactDOM.render(jsxh1,document.getElementById("d1"))    
+    </script>
+</body>
+</html>

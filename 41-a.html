@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.26.5/babel.min.js"></script>
+</head>
+<body>
+    <div  id="d1" style="border:5px solid red;padding:10px"></div>
+    <script type="text/babel">
+    function Todolist(){
+        // state
+        var [todo,settodo]=React.useState(["School Fee","Electricity Bill","Vegetables","Groceries","Water Bill"]);
+        // action
+        function add(){
+        var newtodo=document.getElementById("ntd").value;
+        settodo([...todo,newtodo]);
+    }
+        
+        //ui
+        return (    
+         <div style={{border:"2px solid black",padding:"20px",margin:"10px solid red"}}> 
+        <h1>TodoList:</h1>    
+        <input type="text" id="ntd" />
+        <button onClick={add}>Add Task</button>
+       <ul>
+        {
+           todo.map((todos)=>{
+            return<li>{todos}</li>
+           })
+        }
+        
+        </ul>
+    </div>
+    )
+    }
+    ReactDOM.render(<Todolist/>,document.getElementById("d1"))
+    </script>
+</body>
+</html>

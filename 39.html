@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.26.5/babel.min.js"></script>
+</head>
+<body>
+    <div id="d1"></div>
+    <script type="text/babel">
+     var ar=[];   
+    var jsxh1=<div>
+        <input type="text" id="d2"/>
+        <button onClick={(ev)=>{abc(ev)}}>Click Here to Push Value</button>
+        <h1 id="d3"></h1>
+        </div>
+        function abc(e){
+        d3.innerText=d2.value
+        ar.push(d3.innerText);
+        d3.innerText=ar;
+        }
+ReactDOM.render(jsxh1,document.getElementById("d1"))        
+    </script>
+</body>
+</html>
