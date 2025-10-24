@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Console the id of div on click</title>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.26.5/babel.min.js"></script>
@@ -11,6 +11,7 @@
 <body>
 <id id="d1"></id>
 <script type="text/babel">
+// Console the id of div on click
 var jsxh1=<div id="abc"onClick={(event)=>{abc(event)}}style={{width:"300px",height:"200px",border:"2px solid black"}}>Click Here to See Something</div>
 function abc(ev){
 console.log(ev.target.id);
