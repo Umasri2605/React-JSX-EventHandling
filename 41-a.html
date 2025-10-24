@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todolist with delete button</title>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.26.5/babel.min.js"></script>
@@ -12,6 +12,7 @@
     <div  id="d1" style="border:5px solid red;padding:10px"></div>
     <script type="text/babel">
     function Todolist(){
+    //Todolist with delete button
         // state
         var [todo,settodo]=React.useState(["School Fee","Electricity Bill","Vegetables","Groceries","Water Bill"]);
         // action
